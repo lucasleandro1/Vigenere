@@ -69,3 +69,5 @@ end
 
 # Exemplo de uso:
 vigenere("E")
+
+# Para rodar o codigo use no terminal: "ruby scritp.rb"
