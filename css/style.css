@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab';
+  color: #000;
+}
+
+body {
+  background: #f8f8f8;
+}
+
+h2 {
+  
+	text-align: center;
+	margin: 10px;
+}
+
+#header {
+  padding: 50px 30px 80px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header ul {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+}
+
+#header ul a{
+  text-decoration: none;
+  padding-right: 20px;
+  -webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+#header ul a:hover {
+  transform: translateY(-5px);
+}
+
+#cabecalho {
+  width: 80%;
+  margin-top: 20px 0 0 20px;
+}
+
+#descricao {
+	line-height: 10px;
+}
+
+#entrada {
+  width: 100%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#janela {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 85%;
+  margin: 10px auto;
+}
+
+#texto_entrada,
+#texto_chave,
+#texto_resultado {
+	padding: 10px;
+	width: 100%;
+	border-radius: 5px;
+  color: #000;
+}
+
+.button {
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 20px 0 15px 0;
+	cursor: pointer;
+	background-color: #000;
+  box-shadow: 10px #000;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+  color: #FFF;
+}
+
+.btnEncriptar:hover {
+  color: green;
+  transform: translateY(-10px);
+}
+
+.btnDesencriptar:hover {
+  color: red;
+  transform: translateY(-10px);
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Cifra de Vigènere</title>
+		<meta name="description" content="Programa para criptografar e descriptografar usando o algoritmo de Vigènere.">
+		<meta charset="UTF-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<h2>Cifra de Vigenère</h2>
+			<ul >
+				<a href=""><li>Oque é</li></a>
+				<a href=""><li>Vigenere Decoded</li></a>
+			</ul>
+		</header>
+		<div id="janela">
+			<div id="cabecalho">
+				<span id="descricao">A cifra de Vigènere é um método de criptografia que utiliza uma série de diferentes
+					"cifras de César" com base nas letras de uma palavra-chave. Em uma cifra de César, cada letra da
+					passagem é movida de posição um certo número de letras, para ser substituída pela letra correspondente.
+					Por exemplo, isto significa que em um deslocamento de três posições em uma cifra de César: A se tornaria
+					D; B se tornaria E; C se tornaria F, etc. A cifra de Vigènere baseia-se neste método, utilizando várias
+					cifras de César em diferentes pontos da mensagem. Este programa criptografa e descriptografa usando o
+					algoritmo.</span>
+			</div>
+			<div id="entrada">
+				<h2>Entrada</h2>
+				<textarea id="texto_entrada" rows="5"></textarea>
+				<h2>Chave</h2>
+				<textarea id="texto_chave" rows="1"></textarea>
+				<div id="opcoes">
+					<button id="btnEncriptar" class="button btnEncriptar" onClick="vigenere('E')">ENCRIPTAR</button>
+					<button id="btnDesencriptar" class="button btnDesencriptar" onClick="vigenere('D')">DESENCRIPTAR</button>
+				</div>
+				<div id="saida" style="display: none">
+					<h2>Resultado</h2>
+					<div id="resultado"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
